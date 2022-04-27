@@ -70,3 +70,76 @@ When ending a round other than the first, the Language Selection phase begins. T
 
 Whichever player wins the most rounds wins that game of Code Poker, accomplished by solving the most challenges with the lowest bid in the declared language for those rounds.
 
+## Example Challenges
+
+More academic challenges like reversing linked lists or inverting binary trees are fine, if a little boring.
+
+A good challenge is just challenging enough to require some thinking, but easy enough that a complete solution can be written in 15 minutes or less.
+
+Challenges should be accompanied by some sample input and output where possible, but players aren't required to stick to rigid input/output formats unless it's the core feature of the challenge.
+
+For example, if the challenge is reversing a linked list, one player may expect a string of integers separated by arrows to come in from stdin, which they will construct a reversed linked list from - another may expect a pointer to an already constructed linked list, which they should return the reverse of. Both are reasonable and would be accepted.
+
+Challenges that don't have such a well defined input/output structure are welcomed, too. Something like plotting all Starbucks within 50 miles on a map are perfectly acceptible challenges as well.
+
+## Counting Lines, Using Libraries
+
+Line counting will change a bit based on the language.
+In general, a line is defined as a standalone expression,
+or a pair of expressions that would not be separated by
+running a code formatter on the source.
+Boilerplate to accept input and formatting punctuation are excluded. For example, the following program has 4 lines.
+```javascript
+function filterOddNumbers(arr){
+    let newArr = [];
+    for(let elem of arr){
+        if(elem % 2 === 0) newArr.push(elem);
+    }
+    return newArr;
+}
+
+console.log([1, 2, 3, 4, 5, 6])
+```
+Because the one-line if is an intentional syntatic feature of the language, but writing it as follows is counted as 5 lines:
+
+```javascript
+function filterOddNumbers(arr){
+    let newArr = [];
+    for(let elem of arr){
+        if(elem % 2 === 0){
+            newArr.push(elem);
+        }  
+    }
+    return newArr;
+}
+
+console.log([1, 2, 3, 4, 5, 6])
+```
+
+And the following is 7 lines:
+```javascript
+function filterOddNumbers(arr){
+    let newArr = [];
+    for(let elem of arr){
+        if(elem % 2 === 0){newArr.push(elem);} else {something()}  
+    }
+    return newArr;
+}
+
+console.log([1, 2, 3, 4, 5, 6])
+```
+
+Because that if/else block would be divided into multiple
+lines having had a code formatter run on it.
+
+
+The following has one line.
+
+```javascript
+function filterOddNumbers(arr){
+    return arr.filter(elem => elem % 2 === 0)
+}
+console.log([1, 2, 3, 4, 5, 6])
+```
+
+Different things will fly in different languages. When in doubt, leave it up to the opinion of the table, or if you're all super competative, put all code through the same formatter and count every line with no exceptions.
