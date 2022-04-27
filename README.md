@@ -31,7 +31,7 @@ completed the challenge will randomly pass their code to another player for judg
 The judging player has five minutes to generate one test case and test it against the program they have been given. If the code passes the test, it is considered to have passed the challenge.
 
 > Test cases should be comprehensive, but fair. 
-> Test cases should not contain empty or malformed input, though they are encouraged to be as devious and targeted as possible. Half of the fun finding any opening in your opponent's program!
+> Test cases should not contain empty or malformed input, though they are encouraged to be as devious and targeted as possible. Half of the fun is finding any opening in your opponent's program!
 
 ## Ending the Round - Language Selection
 
