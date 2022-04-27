@@ -82,7 +82,7 @@ For example, if the challenge is reversing a linked list, one player may expect 
 
 Challenges that don't have such a well defined input/output structure are welcomed, too. Something like plotting all Starbucks within 50 miles on a map are perfectly acceptible challenges as well.
 
-## Counting Lines, Using Libraries
+## Counting Lines
 
 Line counting will change a bit based on the language.
 In general, a line is defined as a standalone expression,
